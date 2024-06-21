@@ -8,25 +8,27 @@
   </head>
 
   <body>
-    <div class="nav">
-      <div class="nav_title">
-        <a href="/"> <img src="./img/Group 19.png" /></a>
-        <div>
-          <span style="font-size: 18px; font-weight: 700">자유게시판</span>
-          <span style="font-size: 18px; font-weight: 700">중고마켓</span>
+    <div class="nav_background">
+      <div class="nav_main">
+        <div class="nav_title">
+          <a href="/"> <img src="./img/Group 19.png" /></a>
+          <div>
+            <span style="font-size: 18px; font-weight: 700">자유게시판</span>
+            <span style="font-size: 18px; font-weight: 700">중고마켓</span>
+          </div>
         </div>
-      </div>
 
-      <div class="nav_login">
-        <a href="/login">
-          <button class="nav_button" s>로그인</button>
-        </a>
+        <div class="nav_login">
+          <a href="/login">
+            <button class="nav_button" s>로그인</button>
+          </a>
+        </div>
       </div>
     </div>
     <hr />
 
-    <div class="home">
-      <div class="home_width">
+    <div class="home_background">
+      <div class="home_main">
         <div class="home_title">
           <p style="font-size: 40px; font-weight: 700">
             일상의 모든 물건을<br />거래해 보세요
@@ -46,8 +48,8 @@
       </div>
     </div>
 
-    <div class="info_first">
-      <div class="info_first_width">
+    <div class="info_background">
+      <div class="info_first">
         <div class="info_list">
           <img src="./img/Img_home_01.png" />
           <div>
@@ -68,8 +70,8 @@
       </div>
     </div>
 
-    <div class="info_second">
-      <div class="info_second_width">
+    <div class="info_second_background">
+      <div class="info_second">
         <div class="info_list">
           <img src="./img/Img_home_02.png" />
           <div>
@@ -90,8 +92,8 @@
       </div>
     </div>
 
-    <div class="info_third">
-      <div class="info_third_width">
+    <div class="info_third_background">
+      <div class="info_third">
         <div class="info_list">
           <img src="./img/Img_home_03.png" />
           <div>
@@ -112,8 +114,8 @@
       </div>
     </div>
 
-    <div class="info_last">
-      <div class="info_last_width">
+    <div class="info_last_background">
+      <div class="info_last">
         <div class="info_last_list">
           <div class="last_title">
             <p style="font-size: 40px; font-weight: 700">
@@ -127,8 +129,8 @@
       </div>
     </div>
 
-    <div class="light-theme" style="background-color: #111827">
-      <div class="light-theme_width">
+    <div class="light_theme_background" style="background-color: #111827">
+      <div class="light-theme">
         <div class="theme-first">
           <p>©codeit - 2024</p>
         </div>
@@ -154,53 +156,49 @@
     </div>
   </body>
 </html>
+\
 
 
 
-.info_third {
+
+.home_background {
+  background-color: #cfe5ff;
+  top: 0;
   display: flex;
+  width: 100%;
+  flex-shrink: 0;
+  white-space: nowrap;
   justify-content: center;
-  flex-shrink: 0;
-  white-space: nowrap;
 }
 
-.info_third_width {
+.home_main {
+  background-color: #cfe5ff;
+  top: 0;
   display: flex;
-  margin-top: 138px;
-  justify-content: left;
-  margin-bottom: 276px;
+  width: 100%;
   flex-shrink: 0;
   white-space: nowrap;
+  justify-content: center;
   max-width: 1920px;
-  margin-right: 250px;
 }
 
-.info_third .info_list {
-  display: flex;
-  margin: 0 auto;
-}
-
-.info_third .info_list > img {
-  width: 588px;
-  height: 444px;
-}
-
-.info_third .info_list > div {
-  margin-top: 106px;
-  margin-left: 64px;
+.home_title {
+  margin-top: 170px;
+  justify-content: center;
   text-align: left;
-}
-
-.info_third .info_list .service-title {
-  color: #3692ff;
-}
-
-.info_third .info_list .home-main-title {
-  margin-top: 12px;
   color: #374151;
+  margin-left: 160px;
 }
 
-.info_third .info_list .service-desc {
-  margin-top: 24px;
-  color: #374151;
+
+.home_imag {
+  overflow: hidden;
+}
+
+.home_imag > img {
+  width: auto;
+  height: auto;
+  right: 100px;
+  margin-top: 93px;
+  margin-bottom: -10px;
 }
