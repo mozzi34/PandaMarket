@@ -135,10 +135,6 @@ hr {
   cursor: pointer;
 }
 
-.home_imag {
-  overflow: hidden;
-}
-
 .home_imag > img {
   width: auto;
   height: auto;
