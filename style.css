@@ -151,7 +151,7 @@ hr {
   display: flex;
   margin-top: 138px;
   justify-content: center;
-  margin-bottom: 138px;
+  margin-bottom: 276px;
   flex-shrink: 0;
   white-space: nowrap;
   margin-right: 250px;
@@ -348,7 +348,7 @@ hr {
   height: 160px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   flex-shrink: 0;
   white-space: nowrap;
@@ -372,8 +372,6 @@ hr {
   margin-top: 32px;
   grid-row-end: 1;
   width: 100%;
-  margin-left: 104px;
-  margin-right: 104px;
 }
 
 .theme-link > a {
