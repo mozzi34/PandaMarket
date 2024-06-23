@@ -1,8 +1,6 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 100%;
-  min-width: none;
 }
 
 hr {
@@ -12,6 +10,8 @@ hr {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-size: 100;
 }
 
 .nav_background {
@@ -24,6 +24,7 @@ hr {
   position: sticky;
   justify-content: center;
   height: 70px;
+  z-index: 999;
 }
 
 .nav_main {
@@ -37,6 +38,7 @@ hr {
   justify-content: space-between;
   height: 70px;
   max-width: 1920px;
+  z-index: 999;
 }
 
 .nav_title {
@@ -99,28 +101,38 @@ hr {
   background-color: #cfe5ff;
   top: 0;
   display: flex;
-  width: 100%;
   flex-shrink: 0;
   white-space: nowrap;
   justify-content: center;
+  width: 100%;
+  height: 540px;
 }
 
 .home_main {
-  background-color: #cfe5ff;
+  height: 540px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-left: 200px;
+
+  /* background-color: #cfe5ff;
   top: 0;
   display: flex;
   width: 100%;
   flex-shrink: 0;
   white-space: nowrap;
   justify-content: center;
-  max-width: 1920px;
+  max-width: 1920px; */
 }
 
 .home_title {
   margin-top: 170px;
-  justify-content: center;
   text-align: left;
   color: #374151;
+  margin-left: 130px;
+  margin-bottom: 170px;
 }
 
 .home_title_button {
@@ -137,27 +149,110 @@ hr {
 
 .home_imag > img {
   width: auto;
+  display: flex;
   height: auto;
   right: 100px;
   margin-top: 93px;
-  margin-bottom: -10px;
+  margin-bottom: -5px;
+  overflow: hidden;
 }
 
-.info_background {
+.main_info {
   display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 2838px;
+  border: 1px solid #cfe5ff;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.background_info_first {
+  width: 100%;
+  height: 720px;
+  background-color: #ffffff;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+  /* display: flex;
   margin-top: 138px;
   justify-content: center;
   margin-bottom: 276px;
   flex-shrink: 0;
   white-space: nowrap;
-  margin-right: 250px;
+  margin-right: 250px; */
+}
+
+.background_info_second {
+  width: 100%;
+  height: 720px;
+  background-color: #ffffff;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+
+.background_info_third {
+  width: 100%;
+  height: 720px;
+  background-color: #ffffff;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+
+.background_info_space {
+  width: 100%;
+  height: 138px;
+  background-color: #ffffff;
+  display: flex;
+  margin: 0 auto;
+  z-index: -1;
+  position: relative;
+}
+
+.background_info_last {
+  width: 100%;
+  height: 540px;
+  background-color: #cfe5ff;
+  display: flex;
+  margin: 0 auto;
+}
+
+.info_last_imag {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 996px;
+  height: 540px;
+  width: 100%;
+}
+
+.info_last_imag > img {
+  z-index: 999;
+  align-self: flex-end;
+  padding-left: 385px;
+  background-size: cover;
+  overflow: hidden;
+
+  /* width: auto;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  z-index: 700; */
 }
 
 .info_first {
   display: flex;
   margin-top: 138px;
+  margin-bottom: 138px;
   justify-content: left;
-  margin-bottom: 276px;
   flex-shrink: 0;
   white-space: nowrap;
   margin-right: 250px;
@@ -260,7 +355,7 @@ hr {
   display: flex;
   margin-top: 138px;
   justify-content: left;
-  margin-bottom: 276px;
+  margin-bottom: 138px;
   flex-shrink: 0;
   white-space: nowrap;
   margin-right: 250px;
@@ -297,18 +392,23 @@ hr {
   color: #374151;
 }
 
-.info_last_background {
+.info_space {
+  margin-bottom: 138px;
+}
+
+/* .info_last_background {
   background-color: #cfe5ff;
   height: 540px;
   justify-content: center;
   display: flex;
-}
+} */
 
 .info_last {
   background-color: #cfe5ff;
   height: 540px;
   max-width: 1920px;
   display: flex;
+
   flex-shrink: 0;
   width: 100%;
   flex-shrink: 0;
@@ -320,13 +420,11 @@ hr {
   width: 100%;
   white-space: nowrap;
   box-sizing: border-box;
-  justify-content: center;
+  justify-content: left;
 }
 
 .last_title {
   margin-top: 214px;
-  justify-content: center;
-  text-align: left;
   color: #374151;
 }
 
@@ -351,6 +449,11 @@ hr {
   box-sizing: border-box;
   justify-content: center;
 }
+
+.theme_list {
+  display: flex;
+  justify-content: space-between;
+}
 .light-theme {
   color: #e5e7eb;
   height: 160px;
@@ -362,6 +465,10 @@ hr {
   white-space: nowrap;
   box-sizing: border-box;
   max-width: 1920px;
+  margin-right: 200px;
+  margin-left: 200px;
+  right: 0;
+  left: 0;
 }
 
 .theme-first {
