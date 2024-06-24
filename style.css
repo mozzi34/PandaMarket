@@ -4,10 +4,6 @@ body {
   min-width: 1200px;
 }
 
-hr {
-  color: rgba(0, 0, 0, 0.5);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +17,7 @@ hr {
   position: sticky;
   justify-content: center;
   z-index: 999;
+  border: 1px solid #dfdfdf;
 }
 
 .nav_main {
@@ -119,6 +116,8 @@ hr {
   margin-top: 138px;
   margin-bottom: 138px;
   max-width: 1920px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .info_first .info_list {
@@ -156,6 +155,8 @@ hr {
   margin-bottom: 138px;
   margin-left: 250px;
   max-width: 1920px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .info_second .info_list {
@@ -170,7 +171,7 @@ hr {
 .info_second_text {
   margin-top: 106px;
   margin-right: 64px;
-  text-align: right;
+  flex-shrink: 0;
 }
 
 .info_second_text .service-title {
