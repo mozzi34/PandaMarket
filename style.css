@@ -38,7 +38,7 @@ hr {
   margin-top: 10px;
 }
 
-.nav_title > div {
+.nav_title_text {
   position: absolute;
   top: 30px;
   left: 7px;
@@ -47,13 +47,13 @@ hr {
   color: #4b5563;
 }
 
-.nav_title > div > span {
+.nav_title_text > span {
   align-items: center;
   font-size: 18px;
   font-weight: 700;
 }
 
-.nav_title > div > span:last-child {
+.nav_title_text > span:last-child {
   margin-left: 40px;
 }
 
@@ -125,7 +125,7 @@ hr {
   display: flex;
 }
 
-.info_first .info_list > div {
+.info_first_text {
   margin-top: 106px;
   margin-left: 64px;
 }
@@ -136,7 +136,7 @@ hr {
   font-weight: 700;
 }
 
-.info_first_text .home-main-title {
+.info_first_text .main-title {
   margin-top: 12px;
   color: #374151;
   font-size: 40px;
@@ -167,7 +167,7 @@ hr {
   order: 2;
 }
 
-.info_second .info_list > div {
+.info_second_text {
   margin-top: 106px;
   margin-right: 64px;
   text-align: right;
@@ -208,7 +208,7 @@ hr {
   margin: 0 auto;
 }
 
-.info_third .info_list > div {
+.info_third_text {
   margin-top: 106px;
   margin-left: 64px;
   text-align: left;
