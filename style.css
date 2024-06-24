@@ -40,7 +40,6 @@ hr {
   height: 70px;
   max-width: 1920px;
   z-index: 999;
-  max-width: 1920px;
 }
 
 .nav_title {
@@ -102,7 +101,15 @@ hr {
 }
 
 .home_background {
+  display: flex;
   background-color: #cfe5ff;
+  height: 540px;
+  width: 1920px;
+  width: 100%;
+  align-items: center;
+  background-position: 70% bottom;
+  background-repeat: no-repeat;
+  background-size: 48%;
 
   /* top: 0;
   display: flex;
@@ -113,15 +120,22 @@ hr {
   margin: 0 auto; */
 }
 
-.home_main {
-  height: 540px;
-  display: flex;
-  justify-content: center;
-  max-width: 1920px;
+#photo {
+  background-image: url("./img/Img_home_top (2).png");
+  /* width: 996px;
+  height: 447px; */
+}
+/* .home_main { */
+/* display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  background-position: 100% bottom;
+  background-repeat: no-repeat; */
 
-  /* margin-left: 200px; */
+/* margin-left: 200px; */
 
-  /* background-color: #cfe5ff;
+/* background-color: #cfe5ff;
   top: 0;
   display: flex;
   width: 100%;
@@ -129,11 +143,18 @@ hr {
   white-space: nowrap;
   justify-content: center;
   max-width: 1920px; */
-}
+/* } */
 
+.size {
+  max-width: 1200px;
+}
 .home_title {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin-top: 170px;
-  text-align: left;
+
   color: #374151;
   margin-bottom: 170px;
 }
@@ -199,7 +220,7 @@ hr {
   flex-direction: column;
   width: 1200px;
   height: 2838px;
-  border: 1px solid #cfe5ff;
+  border: 1px solid #ffffff;
   white-space: nowrap;
   position: absolute;
   left: 50%;
@@ -216,6 +237,7 @@ hr {
   margin: 0 auto;
   position: relative;
   z-index: -1;
+
   /* display: flex;
   margin-top: 138px;
   justify-content: center;
@@ -495,9 +517,9 @@ hr {
   width: auto;
   height: auto;
 }
-
 .light_theme_background {
   color: #e5e7eb;
+  background-color: #111827;
   height: 160px;
   width: 100%;
   display: flex;
@@ -507,6 +529,7 @@ hr {
   white-space: nowrap;
   box-sizing: border-box;
   justify-content: center;
+  border: 1px solid;
 }
 
 .theme_list {
