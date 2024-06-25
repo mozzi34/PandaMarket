@@ -172,6 +172,7 @@ body {
   margin-top: 106px;
   margin-right: 64px;
   flex-shrink: 0;
+  text-align: right;
 }
 
 .info_second_text .service-title {
