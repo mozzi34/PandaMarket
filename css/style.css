@@ -1,4 +1,6 @@
 @import "main.css";
+@import "login.css";
+@import "signup.css";
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

@@ -1,0 +1,97 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page_background {
+  width: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.page > a > img {
+  margin-bottom: 40px;
+}
+
+.login_box {
+  height: 430px;
+  margin: 0;
+}
+
+.input_box {
+}
+
+.member_info > p {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.member_info > input {
+  width: 640px;
+  height: 56px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f3f4f6;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px, 24px, 16px, 24px;
+  margin-bottom: 24px;
+}
+
+.member_info > input:focus {
+  border: 1px solid #3692ff;
+}
+
+.login_box > button {
+  width: 640px;
+  height: 56px;
+  background-color: #9ca3af;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.login_simple {
+  display: flex;
+  background-color: #e6f2ff;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 640px;
+  height: 74px;
+  padding: 0 24px;
+  border-radius: 8px;
+}
+
+.login_simple > p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sns_login {
+  display: flex;
+  gap: 16px;
+  width: 100px;
+  height: 42px;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.login_signup {
+  display: flex;
+
+  margin-top: 24px;
+}
