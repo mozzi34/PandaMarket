@@ -21,7 +21,7 @@ input {
 }
 
 .siginup_box {
-  height: 430px;
+  height: 664px;
   margin: 0;
 }
 
@@ -66,10 +66,21 @@ input {
   font-size: 22px;
   color: var(--input-forcus-eye);
 }
+.siginup_box > button {
+  width: 640px;
+  height: 56px;
+  background-color: var(--btn-background-color);
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--white);
+  border: none;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
 
 .signup_login {
   display: flex;
   justify-content: center;
   gap: 4px;
-  margin-top: 24px;
 }

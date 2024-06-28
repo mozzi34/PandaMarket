@@ -22,6 +22,57 @@
   z-index: 999;
 }
 
+@media screen and (max-width: 576px) {
+  .nav_main {
+  }
+  .nav_title > img {
+    width: 20%;
+    height: 100vh;
+  }
+  .nav_title_text > span {
+    font-size: 80%;
+    font-weight: 700;
+  }
+  .nav_login > button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  .nav_title > img {
+    width: 20%;
+    height: 100vh;
+  }
+  .nav_title_text > span {
+    align-items: center;
+    font-size: 80%;
+    font-weight: 700;
+  }
+  .nav_login > button {
+    width: 80%;
+  }
+}
+
+/* @media screen and (max-width: 1920px) {
+  .nav_main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav_title > img {
+    width: 100%;
+    height: 100vh;
+  }
+  .nav_title_text > span {
+    align-items: center;
+    font-size: 10%;
+    font-weight: 700;
+  }
+  .nav_login > button {
+    width: 80%;
+  }
+} */
+
 .nav_title {
   width: 100%;
   position: sticky;
