@@ -1,0 +1,75 @@
+input {
+  padding: 12px 20px;
+}
+
+.page_background {
+  width: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  margin-top: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page > a > img {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.siginup_box {
+  height: 430px;
+  margin: 0;
+}
+
+.member_info > p {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.member_info > input {
+  width: 640px;
+  height: 56px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--input-background-color);
+
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.member_info > input::placeholder {
+  color: var(--input-text-color);
+}
+
+.member_info > input:focus {
+  border: var(--input-forcus);
+}
+
+.signup_password {
+  position: relative;
+}
+
+.signup_password .eyes {
+  position: absolute;
+  top: 32px;
+  bottom: 16px;
+  right: 16px;
+  margin: auto 2px;
+  height: 30px;
+  font-size: 22px;
+  color: var(--input-forcus-eye);
+}
+
+.signup_login {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 24px;
+}
