@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/index_img/web_logo.png" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-953ZVVDGF3"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
+    gtag("config", "G-953ZVVDGF3");
+  </script>
   <body>
     <div class="nav_background">
       <div class="nav_main">
@@ -20,25 +33,26 @@
         </div>
 
         <div class="nav_login">
-          <a href="/login">
+          <a href="/login.html">
             <button class="nav_button"><p>로그인</p></button>
           </a>
         </div>
       </div>
     </div>
 
-    <div class="main_info">
-      <div class="home_title">
+    <div class="home_main_section_top">
+      <div class="home_main_top">
         <p>일상의 모든 물건을<br />거래해 보세요</p>
         <a href="/items">
-          <button class="home_title_button"><p>구경하러 가기</p></button>
+          <button class="home_main_top_btn"><p>구경하러 가기</p></button>
         </a>
       </div>
 
-      <div class="info_first">
-        <div class="info_list">
-          <img src="./img/index_img/Img_home_01.png" />
-          <div class="info_first_text">
+
+      <div class="home_main_section">
+        <div class="home_main_content">
+          <img src="./img/Img_home_01.png" />
+          <div class="home_main_content_text">
             <p class="service-title">Hot iteam</p>
             <p class="main-title">인기 상품을<br />확인해 보세요</p>
             <p class="service-desc">
@@ -47,12 +61,14 @@
           </div>
         </div>
       </div>
-      <div class="info_second">
-        <div class="info_list">
-          <img src="./img/index_img/Img_home_02.png" />
-          <div class="info_second_text">
+
+      <div class="home_main_section home_main_reverse">
+        <div class="home_main_content home_main_reverse_in">
+          <img src="./img/Img_home_02.png" />
+          <div class="home_main_content_text home_main_text_reverse">
+
             <p class="service-title">Search</p>
-            <p class="home-main-title">구매를 원하는<br />상품을 검색하세요</p>
+            <p class="main-title">구매를 원하는<br />상품을 검색하세요</p>
             <p class="service-desc">
               구매하고 싶은 물품은 검색해서<br />쉽게 찾아보세요
             </p>
@@ -60,12 +76,12 @@
         </div>
       </div>
 
-      <div class="info_third">
-        <div class="info_list">
-          <img src="./img/index_img/Img_home_03.png" />
-          <div class="info_third_text">
+      <div class="home_main_section">
+        <div class="home_main_content">
+          <img src="./img/Img_home_03.png" />
+          <div class="home_main_content_text">
             <p class="service-title">Register</p>
-            <p class="home-main-title">판매를 원하는<br />상품을 등록하세요</p>
+            <p class="main-title">판매를 원하는<br />상품을 등록하세요</p>
             <p class="service-desc">
               어떤 물건이든 판매하고 싶은 상품을<br />쉽게 등록하세요
             </p>
