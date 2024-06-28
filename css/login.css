@@ -1,3 +1,7 @@
+input {
+  padding: 12px 20px;
+}
+
 .page_background {
   width: 100%;
 }
@@ -21,9 +25,6 @@
   margin: 0;
 }
 
-.input_box {
-}
-
 .member_info > p {
   font-size: 18px;
   font-weight: 700;
@@ -36,36 +37,54 @@
   height: 56px;
   border-radius: 12px;
   border: none;
-  background-color: #f3f4f6;
+  background-color: var(--input-background-color);
+
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 24px;
-  align-items: center;
 }
 
 .member_info > input::placeholder {
-  text-align: justify;
+  color: var(--input-text-color);
 }
 
 .member_info > input:focus {
-  border: 1px solid #3692ff;
+  border: var(--input-forcus);
 }
 
+.input_password {
+  position: relative;
+}
+
+.input_password .eyes {
+  position: absolute;
+  top: 32px;
+  bottom: 16px;
+  right: 16px;
+  margin: auto 2px;
+  height: 30px;
+  font-size: 22px;
+  color: var(--input-forcus-eye);
+}
+
+input:focus > .eyes {
+  display: none;
+}
 .login_box > button {
   width: 640px;
   height: 56px;
-  background-color: #9ca3af;
+  background-color: var(--btn-background-color);
   border-radius: 40px;
   font-size: 20px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--white);
   border: none;
   margin-bottom: 24px;
 }
 
 .login_simple {
   display: flex;
-  background-color: #e6f2ff;
+  background-color: var(--login_simple-background-color);
   align-items: center;
   text-align: center;
   justify-content: space-between;
@@ -96,4 +115,3 @@
   gap: 4px;
   margin-top: 24px;
 }
-
