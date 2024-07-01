@@ -50,22 +50,20 @@
               <input
                 type="password"
                 name="password"
+                class="m_password"
                 placeholder="비밀번호를 입력해주세요"
               />
-              <div class="eyes">
-              <i id="icon" class="fa-regular fa-eye-slash"></i>
-              <i
-                id="icon"
-                class="fa-sharp fa-regular fa-eye"
-                onclick="fn_showPw();"
-              ></i>
-            </div>
+              <i id="show_pw" class="fa-regular fa-eye-slash"></i>
             </div>
             <div class="signup_password signup_info">
               <p>비밀번호 확인</p>
-              <input type="password" placeholder="비밀번호를 입력해주세요" />
-              <i id="icon" class="fa-regular fa-eye-slash show_up"></i>
-              <i id="icon" class="fa-sharp fa-regular fa-eye"></i>
+              <input
+                type="password"
+                name="password"
+                class="m_password_second"
+                placeholder="비밀번호를 입력해주세요"
+              />
+              <i id="show_pw_second" class="fa-regular fa-eye-slash"></i>
             </div>
           </div>
           <div class="login_simple">
@@ -91,6 +89,6 @@
       src="https://kit.fontawesome.com/f7b1c4a12a.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/signup.js"></script>
+    <script src="../js/signup.js"></script>
   </body>
 </html>
