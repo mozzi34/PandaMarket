@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 .nav_background {
   display: flex;
   top: 0;
@@ -91,7 +92,7 @@
 
 .nav_title_text > span {
   align-items: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -115,7 +116,7 @@
 }
 
 .nav_button > p {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
@@ -154,7 +155,7 @@
 }
 
 .home_main_top_btn > p {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -177,7 +178,7 @@
 
 .home_main_content_text .service-title {
   color: #3692ff;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -191,7 +192,7 @@
 .home_main_content_text .service-desc {
   margin-top: 24px;
   color: #374151;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 
@@ -304,7 +305,7 @@
   display: flex;
   align-items: center;
   color: #374151;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
   height: 540px;
 }

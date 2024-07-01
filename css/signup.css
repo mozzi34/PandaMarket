@@ -2,11 +2,11 @@ input {
   padding: 12px 20px;
 }
 
-.page_background {
+.signup_background {
   width: 100%;
 }
 
-.page {
+.sigup_page {
   display: flex;
   flex-direction: column;
   width: 640px;
@@ -15,7 +15,7 @@ input {
   margin: 0 auto;
 }
 
-.page > a > img {
+.sigup_page > a > img {
   margin-top: 50px;
   margin-bottom: 40px;
 }
@@ -25,14 +25,14 @@ input {
   margin: 0;
 }
 
-.member_info > p {
+.signup_info > p {
   font-size: 18px;
   font-weight: 700;
   text-align: left;
   margin-bottom: 16px;
 }
 
-.member_info > input {
+.signup_info > input {
   width: 640px;
   height: 56px;
   border-radius: 12px;
@@ -44,11 +44,11 @@ input {
   margin-bottom: 24px;
 }
 
-.member_info > input::placeholder {
+.signup_info > input::placeholder {
   color: var(--input-text-color);
 }
 
-.member_info > input:focus {
+.signup_info > input:focus {
   border: var(--input-forcus);
 }
 
@@ -56,7 +56,7 @@ input {
   position: relative;
 }
 
-.signup_password .eyes {
+.signup_password i {
   position: absolute;
   top: 32px;
   bottom: 16px;
@@ -66,6 +66,7 @@ input {
   font-size: 22px;
   color: var(--input-forcus-eye);
 }
+
 .siginup_box > button {
   width: 640px;
   height: 56px;
@@ -84,3 +85,18 @@ input {
   justify-content: center;
   gap: 4px;
 }
+
+/* .input {
+  position: relative;
+}
+
+.input .eyes {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 2px;
+  height: 30px;
+  font-size: 22px;
+  cursor: pointer;
+} */

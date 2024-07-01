@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>판다마켓</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./img/web_logo.png" />
+    <link rel="shortcut icon" href="./img/index_img/web_logo.png" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-953ZVVDGF3"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-953ZVVDGF3");
+  </script>
   <body>
-    <div class="signup_background page_background">
-      <div class="sigup_page page">
+    <div class="signup_background">
+      <div class="sigup_page">
         <a href="/">
           <img src="./img/login_img/logo.png" />
         </a>
         <div class="siginup_box box">
           <div clas="siginup_input input_box">
-            <div class="signup_email member_info">
+            <div class="signup_email signup_info">
               <p>이메일</p>
               <input
                 type="email"
@@ -23,7 +37,7 @@
                 placeholder="이메일을 입력해주세요"
               />
             </div>
-            <div class="signup_nickname member_info">
+            <div class="signup_nickname signup_info">
               <p>닉네임</p>
               <input
                 type="text"
@@ -31,27 +45,27 @@
                 placeholder="닉네임을 입력해주세요"
               />
             </div>
-            <div class="signup_password member_info">
+            <div class="signup_password signup_info">
               <p>비밀번호</p>
               <input
                 type="password"
                 name="password"
                 placeholder="비밀번호를 입력해주세요"
               />
-              <div id="icon" class="eyes">
-                <i id="icon" class="fa-regular fa-eye-slash"></i>
-              </div>
+              <div class="eyes">
+              <i id="icon" class="fa-regular fa-eye-slash"></i>
+              <i
+                id="icon"
+                class="fa-sharp fa-regular fa-eye"
+                onclick="fn_showPw();"
+              ></i>
             </div>
-            <div class="signup_password member_info">
+            </div>
+            <div class="signup_password signup_info">
               <p>비밀번호 확인</p>
-              <input
-                type="password"
-                name="password"
-                placeholder="비밀번호를 입력해주세요"
-              />
-              <div id="icon" class="eyes">
-                <i id="icon" class="fa-regular fa-eye-slash"></i>
-              </div>
+              <input type="password" placeholder="비밀번호를 입력해주세요" />
+              <i id="icon" class="fa-regular fa-eye-slash show_up"></i>
+              <i id="icon" class="fa-sharp fa-regular fa-eye"></i>
             </div>
           </div>
           <div class="login_simple">
@@ -77,5 +91,6 @@
       src="https://kit.fontawesome.com/f7b1c4a12a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/signup.js"></script>
   </body>
 </html>
